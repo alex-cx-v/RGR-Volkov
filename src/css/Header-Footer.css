@@ -1,0 +1,56 @@
+.cl-header,
+.cl-footer {
+    background-color: #DDD0C8;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+}
+
+.menu {
+    color: #323232 !important;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+    background-color: #857D78 !important;
+    color: #fff !important;
+}
+
+nav {
+    color: #323232 !important;
+    padding: 0px !important;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+footer a {
+    margin: auto !important;
+    width: fit-content !important;
+}
+
+.list {
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .menu:hover {
+        transform: scale(1.05) !important;
+        background-color: #857D78 !important;
+        color: #fff !important;
+    }
+
+    div>footer>div>a {
+        font-size: x-large !important;
+    }
+}

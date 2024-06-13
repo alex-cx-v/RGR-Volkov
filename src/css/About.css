@@ -1,0 +1,252 @@
+.pageMain {
+    min-height: 100vh;
+    display: flex;
+    background-color: #EEE8E4;
+}
+
+.mainPage {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        'title1 title1'
+        'title2 title2'
+        'phrase1 pic1'
+        'title3 title3'
+        'pic2 phrase2'
+        'title4 title4'
+        'phrase3 pic3';
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title1 {
+    grid-area: title1;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.title3 {
+    grid-area: title3;
+}
+
+.title4 {
+    grid-area: title4;
+}
+
+.phrase1 {
+    grid-area: phrase1;
+}
+
+.phrase2 {
+    grid-area: phrase2;
+}
+
+.phrase3 {
+    grid-area: phrase3;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img {
+    width: 100%;
+}
+
+.pic {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #f5f1ef;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 25px;
+}
+
+main p {
+    background-color: #f5f1ef;
+    color: #323232;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    width: auto;
+    transition: all ease 0.2s;
+}
+
+main p:hover,
+.pic:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+main p:hover {
+    background-color: #323232;
+    color: #f5f1ef !important;
+}
+
+.head1,
+.head2 {
+    background-color: #f5f1ef;
+    color: #323232;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    width: auto;
+    transition: all ease 0.2s;
+    margin: 10px;
+}
+
+.head1:hover,
+.head2:hover {
+    background-color: #323232;
+    color: #f5f1ef !important;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #323232;
+    color: #f5f1ef !important;
+}
+
+@media (max-width: 519px) {
+    .head1 {
+        font-size: 20px !important;
+    }
+
+    .head2 {
+        font-size: 15px !important;
+    }
+
+    div>main>div.phrase>p {
+        font-size: 12px !important;
+        margin: 10px !important;
+    }
+
+    div>main>div.pic {
+        width: 120px !important;
+        margin: 10px !important;
+    }
+}
+
+
+@media (min-width: 520px) and (max-width: 760px) {
+    main {
+        grid-template-areas:
+            'title1 title1'
+            'title2 title2'
+            'phrase1 phrase1'
+            'pic1 pic1'
+            'title3 title3'
+            'phrase2 phrase2'
+            'pic2 pic2'
+            'title4 title4'
+            'phrase3 phrase3'
+            'pic3 pic3';
+    }
+
+    .head1 {
+        font-size: 40px !important;
+    }
+
+    .head2 {
+        font-size: 35px !important;
+    }
+
+    div>main>div.phrase>p {
+        font-size: 20px !important;
+        margin: 10px !important;
+    }
+
+    div>main>div.pic>img {
+        width: 190px !important;
+        margin: 10px !important;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 992px) {
+    main {
+        grid-template-areas:
+            'title1 title1'
+            'title2 title2'
+            'phrase1 phrase1'
+            'pic1 pic1'
+            'title3 title3'
+            'phrase2 phrase2'
+            'pic2 pic2'
+            'title4 title4'
+            'phrase3 phrase3'
+            'pic3 pic3';
+    }
+
+    .head1 {
+        font-size: 45px !important;
+    }
+
+    .head2 {
+        font-size: 40px !important;
+    }
+
+    div>main>div.phrase>p {
+        font-size: 25px !important;
+        margin: 15px !important;
+    }
+
+    div>main>div.pic {
+        width: 240px !important;
+        margin: 10px !important;
+    }
+}
+
+@media (min-width: 993px) {
+    .head1 {
+        font-size: 45px !important;
+    }
+
+    .head2 {
+        font-size: 40px !important;
+    }
+
+    main {
+        grid-template-areas:
+            'title1 title1'
+            'title2 title2'
+            'phrase1 pic1'
+            'title3 title3'
+            'pic2 phrase2'
+            'title4 title4'
+            'phrase3 pic3';
+    }
+
+    div>main>div.phrase>p {
+        font-size: 35px !important;
+        margin: 45px !important;
+    }
+
+    div>main>div.pic {
+        width: 390px !important;
+        margin: 45px !important;
+    }
+}

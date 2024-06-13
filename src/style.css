@@ -1,0 +1,60 @@
+.Page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE8E4;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEE8E4;
+    padding: 20px;
+}
+
+
+.titleMain {
+    background-color: #f5f1ef;
+    color: #323232;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    width: auto;
+    transition: all ease 0.2s;
+}
+
+.titleMain:hover {
+    background-color: #323232;
+    color: #f5f1ef !important;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #323232;
+    color: #f5f1ef !important;
+}
+
+.titleMain1 {
+    grid-area: titleMain1;
+}
+
+.titleMain2 {
+    grid-area: titleMain2;
+}
+
+.titleMain3 {
+    grid-area: titleMain3;
+}
+
+.titleMain4 {
+    grid-area: titleMain4;
+}
+
+@media (max-width: 520px) {
+    .titleMain {
+        font-size: 22px;
+        margin: 10px;
+    }
+}
